@@ -1,0 +1,169 @@
+{
+	// 组件自动导入
+	"easycom": {
+		//开启自动扫描
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	//页面
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarTitleText": "虎纠吃游实评"
+			}
+		},
+		{
+			"path": "pages/favor/favor",
+			"style": {
+				"navigationBarTitleText": "收藏"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/writecomment/writecomment",
+			"style": {
+				"navigationBarTitleText": "写评论"
+			}
+		},
+		{
+			"path": "pages/search1/search1",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/store/store",
+			"style": {
+				"navigationBarTitleText": "收藏"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},{
+			"path": "pages/storesearch/storesearch",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/storesearch1/storesearch1",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#AFE1AF",
+		"backgroundColor": "#F8F8F8"
+	},
+	//配置分包
+	"subPackages": [
+		{
+			"root": "pagesMember",
+			"pages": [
+				{
+					"path": "comment/comment",
+					"style": {
+						"navigationBarTitleText": "发布新的景点/美食"
+					}
+				},
+				{
+					"path": "about/about",
+					"style": {
+						"navigationBarTitleText": "关于"
+					}
+				},
+				{
+					"path": "connect/connect",
+					"style": {
+						"navigationBarTitleText": "联系我们"
+					}
+				},
+				{
+					"path": "submitted/submitted",
+					"style": {
+						"navigationBarTitleText": "提交成功"
+					}
+				},
+				{
+					"path": "profile/profile",
+					"style": {
+						"navigationBarTitleText": "用户详情"
+					}
+				},
+				{
+					"path": "profilecard/profilecard2",
+					"style": {
+						"navigationBarTitleText": "用户详情"
+					}
+				},{
+					"path": "profilecard/profilecard",
+					"style": {
+						"navigationBarTitleText": "用户详情"
+					}
+				}
+			]
+		}
+	],
+	//设置TabBar
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#62f2d3",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/home_default.png",
+				"selectedIconPath": "static/tabs/home_selected.png"
+			},
+			{
+				"text": "收藏",
+				"pagePath": "pages/store/store",
+				"iconPath": "static/tabs/favor_default.png",
+				"selectedIconPath": "static/tabs/favor_selected.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabs/user_default.png",
+				"selectedIconPath": "static/tabs/user_selected.png"
+			}
+		]
+	}
+}
